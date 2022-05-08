@@ -286,11 +286,15 @@ h6 {
     #hero h1 {
         font-size: 40px;
         line-height: 36px;
+        text-align: center;
     }
     #hero h2 {
         font-size: 18px;
         line-height: 24px;
         margin-bottom: 30px;
+    }
+    #hero p {
+        text-align: center;
     }
 }
 
