@@ -220,3 +220,38 @@
     });
 
 })()
+
+
+
+// Age Calculator
+
+var age = document.getElementById('age');
+var calculated_age;
+
+function calculate_age() {
+    var birth_date = new Date(2000, 04, 29);
+    var birth_day = birth_date.getDate();
+    var birth_month = birth_date.getMonth();
+    var birth_year = birth_date.getFullYear();
+
+    var today_date = new Date();
+    var today_day = today_date.getDate();
+    var today_month = today_date.getMonth();
+    var today_year = today_date.getFullYear();
+
+    if (today_month > birth_month) {
+        calculated_age = today_year - birth_year;
+    } else if (today_month == birth_month) {
+        if (today_day >= birth_day) {
+            calculated_age = today_year - birth_year;
+        } else {
+            calculated_age = today_year - birth_year - 1;
+        }
+    } else {
+        calculated_age = today_year - birth_year - 1;
+    }
+
+    age.innerHTML = calculated_age;
+}
+
+calculate_age();
