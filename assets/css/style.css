@@ -104,7 +104,7 @@ h6 {
 }
 
 #header .profile .social-links a {
-    font-size: 18px;
+    font-size: 20px;
     display: inline-block;
     background: #212431;
     color: #fff;
@@ -118,8 +118,26 @@ h6 {
     transition: 0.3s;
 }
 
-#header .profile .social-links a:hover {
+#header .profile .social-links a:nth-child(1):hover {
+    background: linear-gradient(to bottom right, rgb(238, 155, 0), rgb(194, 0, 97));
+    color: #fff;
+    text-decoration: none;
+}
+
+#header .profile .social-links a:nth-child(2):hover {
     background: #149ddd;
+    color: #fff;
+    text-decoration: none;
+}
+
+#header .profile .social-links a:nth-child(3):hover {
+    background: #002beb;
+    color: #fff;
+    text-decoration: none;
+}
+
+#header .profile .social-links a:nth-child(4):hover {
+    background: black;
     color: #fff;
     text-decoration: none;
 }
@@ -272,7 +290,7 @@ h6 {
 }
 
 #hero p span {
-    color: #15b5ff;
+    color: #56c9ff;
     padding-bottom: 4px;
     letter-spacing: 1px;
 }
